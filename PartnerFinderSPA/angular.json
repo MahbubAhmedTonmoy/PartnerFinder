@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "PartnerFinderSPA"
+    }
+  },
+  "defaultProject": "PartnerFinderSPA",
+  "cli": {
+    "analytics": false
+  }
 }
