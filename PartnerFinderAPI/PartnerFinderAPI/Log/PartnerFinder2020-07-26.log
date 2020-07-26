@@ -11,3 +11,6 @@
 2020-07-26 23:10:59.7004|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc.
 2020-07-26 23:10:59.7436|WARN|Microsoft.AspNetCore.Identity.SignInManager|User f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc failed to provide the correct password.
 2020-07-26 23:10:59.9767|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-26 23:16:21.1910|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-26 23:16:21.3250|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-26 23:16:21.3439|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
