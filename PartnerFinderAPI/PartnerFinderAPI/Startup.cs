@@ -62,6 +62,7 @@ namespace PartnerFinderAPI
                 //options.AddPolicy("CreateRolePolicy",
                 //    policy => policy.RequireClaim("Create Role"));
             });
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -71,7 +72,7 @@ namespace PartnerFinderAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseHttpsRedirection();
 
             app.UseRouting();
