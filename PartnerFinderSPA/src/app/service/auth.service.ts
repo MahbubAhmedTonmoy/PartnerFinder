@@ -4,8 +4,8 @@ import {BehaviorSubject} from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Token } from '../models/token';
 
-@Injectable({
-  providedIn: 'root'
+@Injectable({   // Injectable decorator
+  providedIn: 'root'  //app.module.ts [providers] e maira dia asa lagbe
 })
 export class AuthService {
   baseUrl = 'https://localhost:44322/api/auth/'
@@ -20,4 +20,6 @@ login(model: any){
       }
     }));
   }
+
+
 }
