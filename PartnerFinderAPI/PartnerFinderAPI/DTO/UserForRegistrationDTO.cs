@@ -27,6 +27,6 @@ namespace PartnerFinderAPI.DTO
         public string ConfirmPassword { get; set; }
 
         [Required]
-        public List<string> Role { get; set; }
+        public string Role { get; set; }
     }
 }

@@ -5,20 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { AuthService } from './service/auth.service'
+import { HomeComponent } from './home/home.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
    declarations: [
       AppComponent,
-      NavComponent
+      NavComponent,
+      HomeComponent,
+      RegistrationComponent
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
       HttpClientModule,
       NgbModule,
-      FormsModule // template from
+      FormsModule,//templatefrom
+      ReactiveFormsModule
    ],
    providers: [
       AuthService
