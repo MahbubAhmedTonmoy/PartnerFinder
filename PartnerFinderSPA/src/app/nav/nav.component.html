@@ -1,30 +1,29 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Partner Finder</a>
+  <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active" >Partner Finder</a>
   
 
-    <ul class="navbar-nav mr-auto">
+    <ul *ngIf="IsLoggedIn()" class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Matches</a>
+        <a class="nav-link" [routerLink]="['/members']">Matches</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Users</a>
+        <a class="nav-link" [routerLink]="['/lists']">Users</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Messages</a>
+        <a class="nav-link" [routerLink]="['/message']">Messages</a>
       </li>
     </ul>
 <!--after login-->
-    <div *ngIf="IsLoggedIn()" class="dropdown">     
-      <a class="dropdown-toggle text-light">
+    <div *ngIf="IsLoggedIn()" class="col text-right">     
+      <a class="text-light mr-2">
         Welcome {{authservice.decodedToken?.unique_name | titlecase}}
       </a>
-      <div class="dropdown-menu mt-3" *dropdownMenu>
+      <button type="button" class="btn btn-danger" (click)="Logout()"><i class="fa fa-sign-out"></i></button>
+      <!--<div class="dropdown-menu mt-3" *dropdownMenu>
         <a class="dropdown-item" [routerLink]="['/member/edit']">
           <i class="fa fa-user"></i> Edit Profile</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" (click)="Logout()">
-          <i class="fa fa-sign-out"></i> Logout</a>
-      </div>
+        <div class="dropdown-divider"></div> -->
+        
     </div>
 
 <!--login form-->
