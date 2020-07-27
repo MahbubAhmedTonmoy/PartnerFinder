@@ -46,3 +46,21 @@
 2020-07-27 18:32:22.2215|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-07-27 18:32:22.2782|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2020-07-27 18:32:22.2851|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-27 22:20:03.5375|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Photos] DROP CONSTRAINT [FK_Photos_AspNetUsers_UserId];
+2020-07-27 22:21:30.1148|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Photos] DROP CONSTRAINT [FK_Photos_AspNetUsers_UserId];
+2020-07-27 22:22:55.9349|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2020-07-27 22:25:27.9489|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-27 22:25:28.0232|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-27 22:25:28.0413|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-27 22:27:14.1209|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-27 22:27:14.1593|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-27 22:27:14.1593|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI

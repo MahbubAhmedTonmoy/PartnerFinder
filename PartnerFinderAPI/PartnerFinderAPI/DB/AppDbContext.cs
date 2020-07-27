@@ -13,7 +13,8 @@ namespace PartnerFinderAPI.DB
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
 
-        }
+        } //Add-Migration first Update-Database
         public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<Photo> Photos { get; set; }
     }
 }
