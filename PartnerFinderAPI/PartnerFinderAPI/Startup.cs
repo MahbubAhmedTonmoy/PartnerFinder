@@ -16,6 +16,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using PartnerFinderAPI.DB;
+using PartnerFinderAPI.Helpers.GlobalErrorHandel;
 using PartnerFinderAPI.JWTToken;
 using PartnerFinderAPI.Model;
 
@@ -72,6 +73,7 @@ namespace PartnerFinderAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.ConfigureExceptionHandler(); // global error middleware
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseHttpsRedirection();
 

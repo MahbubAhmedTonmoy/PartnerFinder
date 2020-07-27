@@ -10,3 +10,17 @@
 2020-07-27 13:47:49.6265|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-07-27 13:47:49.6868|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2020-07-27 13:47:49.6956|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-27 14:00:20.6278|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-27 14:00:20.6757|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-27 14:00:20.6757|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-27 14:19:17.8034|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-27 14:19:17.8456|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-27 14:19:17.8456|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-27 14:20:44.8264|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc.
+2020-07-27 14:20:44.8320|WARN|Microsoft.AspNetCore.Identity.SignInManager|User f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc failed to provide the correct password.
+2020-07-27 14:21:37.9966|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-27 14:21:38.0466|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-27 14:21:38.0466|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-27 14:24:41.4170|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-27 14:24:41.5102|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-27 14:24:41.5303|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI

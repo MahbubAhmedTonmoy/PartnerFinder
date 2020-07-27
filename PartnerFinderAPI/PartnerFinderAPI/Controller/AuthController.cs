@@ -65,7 +65,7 @@ namespace PartnerFinderAPI.Controller
             };
             if (await _userManager.FindByEmailAsync(userRegistrationDto.Email) != null)
             {
-                return BadRequest("this email already used");
+                return StatusCode(400, $"{userRegistrationDto.Email} email already used");
             }
             if (userRegistrationDto.Role.Contains("Admin") || userRegistrationDto.Role.Contains("User"))
             {
@@ -87,7 +87,7 @@ namespace PartnerFinderAPI.Controller
                     {
                         return BadRequest("role is not matched");
                     }
-                    return Ok(createdUser);
+                    return StatusCode(200, createdUser);
                 }
                 else
                 {
@@ -126,7 +126,7 @@ namespace PartnerFinderAPI.Controller
                 _logger.LogError($"{ex.StackTrace} {ex.Message}");
                 throw;
             }
-            return null;// StatusCode(500, "Internal server error");
+            return StatusCode(500, "Internal server error");
         }
 
 

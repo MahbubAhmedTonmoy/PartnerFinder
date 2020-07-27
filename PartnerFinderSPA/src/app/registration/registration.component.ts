@@ -30,9 +30,9 @@ export class RegistrationComponent implements OnInit {
     if(this.registerForm.valid){
       this.userforRegInfo = Object.assign({}, this.registerForm.value); // this.registerForm.value clone ihe value in {} empty object ,then assign {} to this.user
       this.authService.register(this.userforRegInfo).subscribe(next => {
-        console.log("loged in");
+        console.log("account created");
       }, error => {
-        console.log('failed to log');
+        console.log('failed to create account');
       });
     }}
 }
