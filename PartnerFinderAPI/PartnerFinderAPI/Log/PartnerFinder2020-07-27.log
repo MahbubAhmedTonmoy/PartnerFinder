@@ -24,3 +24,25 @@
 2020-07-27 14:24:41.4170|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-07-27 14:24:41.5102|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2020-07-27 14:24:41.5303|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-27 14:31:26.7010|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-27 14:31:26.7433|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-27 14:31:26.7522|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-27 15:05:11.9407|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc.
+2020-07-27 15:05:11.9716|WARN|Microsoft.AspNetCore.Identity.SignInManager|User f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc failed to provide the correct password.
+2020-07-27 15:05:16.1721|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc.
+2020-07-27 15:05:16.1721|WARN|Microsoft.AspNetCore.Identity.SignInManager|User f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc failed to provide the correct password.
+2020-07-27 15:21:50.7764|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-27 15:21:50.8464|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-27 15:21:50.8464|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-27 15:22:41.2546|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc.
+2020-07-27 15:22:41.2737|WARN|Microsoft.AspNetCore.Identity.SignInManager|User f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc failed to provide the correct password.
+2020-07-27 15:23:21.9273|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc.
+2020-07-27 15:23:21.9593|WARN|Microsoft.AspNetCore.Identity.SignInManager|User f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc failed to provide the correct password.
+2020-07-27 15:23:58.4502|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc.
+2020-07-27 15:23:58.4560|WARN|Microsoft.AspNetCore.Identity.SignInManager|User f4380c2f-f1d6-42fe-bb33-5958d0a3c5bc failed to provide the correct password.
+2020-07-27 16:25:37.1979|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-27 16:25:37.2490|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-27 16:25:37.2567|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-27 18:32:22.2215|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-27 18:32:22.2782|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-27 18:32:22.2851|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
