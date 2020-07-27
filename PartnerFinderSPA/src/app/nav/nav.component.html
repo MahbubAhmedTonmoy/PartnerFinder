@@ -16,15 +16,17 @@
 <!--after login-->
     <div *ngIf="IsLoggedIn()" class="dropdown">     
       <a class="dropdown-toggle text-light">
-        Welcome 
+        Welcome {{authservice.decodedToken?.unique_name | titlecase}}
       </a>
-      <div class="dropdown-menu mt-3">
-        
+      <div class="dropdown-menu mt-3" *dropdownMenu>
+        <a class="dropdown-item" [routerLink]="['/member/edit']">
+          <i class="fa fa-user"></i> Edit Profile</a>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" (click)="Logout()">
           <i class="fa fa-sign-out"></i> Logout</a>
       </div>
     </div>
+
 <!--login form-->
     <form *ngIf="!IsLoggedIn()" #loginFrom="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="Login()">
       <input class="form-control mr-sm-2" type="text" name="Email" placeholder="Email" required [(ngModel)]="model.Email"> <!--2 way inding-->
