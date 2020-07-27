@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserForRegistration } from '../models/UserForRegistration';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AuthService } from '../service/auth.service';
+import { AlertifyService } from '../service/alertify.service';
 
 @Component({
   selector: 'app-registration',
@@ -13,7 +14,7 @@ export class RegistrationComponent implements OnInit {
   userforRegInfo: UserForRegistration;
   registerForm: FormGroup;
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, private alertify: AlertifyService) { }
 
   ngOnInit() {
 
@@ -31,8 +32,10 @@ export class RegistrationComponent implements OnInit {
       this.userforRegInfo = Object.assign({}, this.registerForm.value); // this.registerForm.value clone ihe value in {} empty object ,then assign {} to this.user
       this.authService.register(this.userforRegInfo).subscribe(next => {
         console.log("account created");
+        this.alertify.success("registration done")
       }, error => {
         console.log(error);
+        this.alertify.error(error);
       });
     }}
 }
