@@ -32,7 +32,7 @@ export class RegistrationComponent implements OnInit {
       this.authService.register(this.userforRegInfo).subscribe(next => {
         console.log("account created");
       }, error => {
-        console.log('failed to create account');
+        console.log(error);
       });
     }}
 }
