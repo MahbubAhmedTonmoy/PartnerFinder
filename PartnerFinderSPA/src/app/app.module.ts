@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
+import { JwtModule } from "@auth0/angular-jwt";
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 import { AuthService } from './service/auth.service'
 import { HomeComponent } from './home/home.component';
@@ -18,10 +20,15 @@ import { UserService } from './service/user.service';
 import { from } from 'rxjs';
 import { MembersComponent } from './memberslist/members/members.component';
 import { MemberCardComponent } from './memberslist/member-card/member-card.component';
+import { MemberDetailsComponent } from './memberslist/member-details/member-details.component';
 import { LikesuserComponent } from './likesuser/likesuser.component';
 import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from './routes';
 import { AuthGuard } from './guards/auth.guard';
+
+export function tokenGetter() {
+   return localStorage.getItem('token');
+ }
 
 @NgModule({
    declarations: [
@@ -32,7 +39,8 @@ import { AuthGuard } from './guards/auth.guard';
       MembersComponent,
       LikesuserComponent,
       MessagesComponent,
-      MemberCardComponent
+      MemberCardComponent,
+      MemberDetailsComponent
    ],
    imports: [
       BrowserModule,
@@ -42,7 +50,15 @@ import { AuthGuard } from './guards/auth.guard';
       FormsModule, //templatefrom
       ReactiveFormsModule,
       RouterModule.forRoot(appRoutes),
-      BsDropdownModule.forRoot()
+      BsDropdownModule.forRoot(),
+      TabsModule.forRoot(),
+		JwtModule.forRoot({
+         config: {
+           tokenGetter: tokenGetter,
+           allowedDomains: ['localhost:44322'],
+           disallowedRoutes: ['localhost:44322/api/auth']
+         }
+       })
    ],
    providers: [
       AuthService,
