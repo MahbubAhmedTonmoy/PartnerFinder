@@ -16,9 +16,6 @@ namespace PartnerFinderAPI.Helpers
                 .ForMember(destination => destination.PhotoUrl, opt =>
                 {
                     opt.MapFrom(src => src.Photos.FirstOrDefault(x => x.IsMain == true).Url);
-                })
-                .ForMember(destination => destination.Age, opt => { 
-                    opt.
                 });
 
             CreateMap<AppUser, UserForDetailedDto>()

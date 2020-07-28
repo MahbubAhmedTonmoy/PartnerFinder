@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PartnerFinderAPI.DTO;
 using PartnerFinderAPI.Model;
@@ -12,6 +13,7 @@ namespace PartnerFinderAPI.Controller
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly IUnitofWork _unitofWork;
@@ -37,12 +39,12 @@ namespace PartnerFinderAPI.Controller
                 throw;
             }
         }
-        [HttpGet("{email}")]
-        public async Task<ActionResult> GetByEmail(string email)
+        [HttpGet("{id}")]
+        public async Task<ActionResult> GetByEmail(string id)
         {
             try
             {
-                var user = await _unitofWork.PartnerFinder.GetUser(email);
+                var user = await _unitofWork.PartnerFinder.GetUser(id);
                 if (user == null)
                 {
                     return StatusCode(404, "not found");

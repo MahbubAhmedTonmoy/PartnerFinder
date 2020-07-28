@@ -16,9 +16,9 @@ namespace PartnerFinderAPI.Repository
             _db = db;
         }
 
-        public async Task<AppUser> GetUser(string email)
+        public async Task<AppUser> GetUser(string id)
         {
-            var ans =await _db.AppUsers.Include(x => x.Photos).FirstOrDefaultAsync(x=> x.Email == email);
+            var ans =await _db.AppUsers.Include(x => x.Photos).FirstOrDefaultAsync(x=> x.Id == id);
             return ans;
         }
 

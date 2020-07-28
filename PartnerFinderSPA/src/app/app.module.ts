@@ -14,8 +14,10 @@ import { HomeComponent } from './home/home.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ErrorInterceptorProvider } from './service/error.interceptor';
 import { AlertifyService } from './service/alertify.service';
+import { UserService } from './service/user.service';
 import { from } from 'rxjs';
-import { MembersComponent } from './members/members.component';
+import { MembersComponent } from './memberslist/members/members.component';
+import { MemberCardComponent } from './memberslist/member-card/member-card.component';
 import { LikesuserComponent } from './likesuser/likesuser.component';
 import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from './routes';
@@ -29,7 +31,8 @@ import { AuthGuard } from './guards/auth.guard';
       RegistrationComponent,
       MembersComponent,
       LikesuserComponent,
-      MessagesComponent
+      MessagesComponent,
+      MemberCardComponent
    ],
    imports: [
       BrowserModule,
@@ -45,7 +48,8 @@ import { AuthGuard } from './guards/auth.guard';
       AuthService,
       ErrorInterceptorProvider,
       AlertifyService,
-      AuthGuard
+      AuthGuard,
+      UserService
    ],
    bootstrap: [
       AppComponent

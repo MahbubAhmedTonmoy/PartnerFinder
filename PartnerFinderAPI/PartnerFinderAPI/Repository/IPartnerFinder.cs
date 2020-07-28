@@ -9,6 +9,6 @@ namespace PartnerFinderAPI.Repository
     public interface IPartnerFinder: IRepository<AppUser>
     {
         Task<IEnumerable<AppUser>> GetUsers();
-        Task<AppUser> GetUser(string email);
+        Task<AppUser> GetUser(string id);
     }
 }
