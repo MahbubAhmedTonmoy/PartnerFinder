@@ -1,0 +1,76 @@
+2020-07-28 09:26:59.0867|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 09:26:59.1425|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 09:26:59.1559|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 09:31:26.8144|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 09:31:26.8828|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 09:31:26.8956|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 09:32:49.0909|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 09:32:49.1816|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 09:32:49.1933|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 09:33:18.6704|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 09:33:18.7299|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 09:33:18.7379|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 09:39:27.6328|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 09:39:27.6773|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 09:39:27.6773|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 09:47:19.2769|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 09:47:19.3328|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 09:47:19.3328|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 09:48:23.9825|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 09:48:24.0295|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 09:48:24.0395|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 09:49:37.8822|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 09:49:37.9293|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 09:49:37.9369|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 09:50:47.3074|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 09:50:47.3669|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 09:50:47.3771|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 09:51:52.8613|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 09:51:52.9452|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 09:51:52.9617|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 09:56:15.0157|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 09:56:15.0539|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 09:56:15.0539|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 09:58:06.4780|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 09:58:06.6163|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 09:58:06.6404|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 10:22:35.3345|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 10:22:35.3872|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 10:22:35.3943|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 10:22:44.3657|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-28 10:23:12.4715|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-28 10:24:27.2599|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 10:24:27.3631|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 10:24:27.3830|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 10:24:37.7908|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-28 10:26:15.4486|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 10:26:15.5443|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 10:26:15.5837|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 10:26:25.6239|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-28 10:27:57.1442|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 10:27:57.1978|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 10:27:57.2113|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 10:28:00.2344|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-28 10:28:04.0730|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-28 10:29:18.8701|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 10:29:18.9232|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 10:29:18.9386|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 10:34:28.5273|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 10:34:28.5747|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 10:34:28.5823|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 10:35:06.9630|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 10:35:07.0100|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 10:35:07.0192|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 10:40:50.9169|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 10:40:50.9698|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 10:40:50.9698|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 10:42:54.9158|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 10:42:54.9637|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 10:42:54.9711|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 10:46:01.9506|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 10:46:01.9904|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 10:46:01.9904|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-28 10:47:43.2322|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-28 10:49:10.5211|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-28 10:49:10.5604|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-28 10:49:10.5673|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI

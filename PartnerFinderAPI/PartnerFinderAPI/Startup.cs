@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -19,6 +20,7 @@ using PartnerFinderAPI.DB;
 using PartnerFinderAPI.Helpers.GlobalErrorHandel;
 using PartnerFinderAPI.JWTToken;
 using PartnerFinderAPI.Model;
+using PartnerFinderAPI.Repository;
 
 namespace PartnerFinderAPI
 {
@@ -37,7 +39,11 @@ namespace PartnerFinderAPI
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("PartnerFinder")));
 
             _ = services.AddIdentity<AppUser, IdentityRole>(o => { }).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
+
+            services.AddCors();
+            services.AddAutoMapper(typeof(Startup));
             services.AddScoped<IJwtGenerator, JwtGenerator>();
+            services.AddScoped<IUnitofWork, UnitofWork>();
 
             services.AddControllers().AddNewtonsoftJson(o => o.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
@@ -63,7 +69,7 @@ namespace PartnerFinderAPI
                 //options.AddPolicy("CreateRolePolicy",
                 //    policy => policy.RequireClaim("Create Role"));
             });
-            services.AddCors();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

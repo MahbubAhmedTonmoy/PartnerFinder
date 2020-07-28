@@ -72,3 +72,5 @@ C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\ob
 C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\obj\Debug\netcoreapp3.1\PartnerFinderAPI.pdb
 C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\obj\Debug\netcoreapp3.1\PartnerFinderAPI.genruntimeconfig.cache
 C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\bin\Debug\netcoreapp3.1\NLog.config
+C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
