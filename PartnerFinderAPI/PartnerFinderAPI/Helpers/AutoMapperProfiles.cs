@@ -12,8 +12,21 @@ namespace PartnerFinderAPI.Helpers
     {
         public AutoMapperProfiles()
         {
-            CreateMap<AppUser, UserForListDto>();
-            CreateMap<AppUser, UserForDetailedDto>();
+            CreateMap<AppUser, UserForListDto>()
+                .ForMember(destination => destination.PhotoUrl, opt =>
+                {
+                    opt.MapFrom(src => src.Photos.FirstOrDefault(x => x.IsMain == true).Url);
+                })
+                .ForMember(destination => destination.Age, opt => { 
+                    opt.
+                });
+
+            CreateMap<AppUser, UserForDetailedDto>()
+                .ForMember(destination => destination.PhotoUrl, opt =>
+                {
+                    opt.MapFrom(src => src.Photos.FirstOrDefault(x => x.IsMain == true).Url);
+                });
+            CreateMap<Photo, PhotosForDetailedDto>();
         }
     }
 }
