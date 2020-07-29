@@ -1,5 +1,6 @@
 ﻿
 
+using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -7,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using PartnerFinderAPI.DTO;
 using PartnerFinderAPI.JWTToken;
 using PartnerFinderAPI.Model;
+using PartnerFinderAPI.Repository;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -23,9 +25,11 @@ namespace PartnerFinderAPI.Controller
         private readonly IConfiguration _config;
         private readonly ILogger<AuthController> _logger;
         private readonly IJwtGenerator _jwtGenerator;
+        private readonly IUnitofWork _unitofWork;
+        private readonly IMapper _mapper;
         public AuthController(UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager,
             SignInManager<AppUser> signInManager, IConfiguration config, ILogger<AuthController> logger,
-             IJwtGenerator jwtGenerator)
+             IJwtGenerator jwtGenerator, IUnitofWork unitofWork, IMapper map)
         {
             _jwtGenerator = jwtGenerator;
             _userManager = userManager;
@@ -33,6 +37,8 @@ namespace PartnerFinderAPI.Controller
             _signInManager = signInManager;
             _config = config;
             _logger = logger;
+            _mapper = map;
+            _unitofWork = unitofWork; 
         }
 
         [HttpGet]
@@ -116,6 +122,10 @@ namespace PartnerFinderAPI.Controller
                 {
                     var role = await _userManager.GetRolesAsync(userExist);
                     string[] roleAssigned = role.ToArray();
+                    //logintime update
+                    userExist.LastActive = DateTime.Now;
+                   // _mapper.Map(userForUpdate, userExist);
+                    await _unitofWork.Save();
 
                     return Ok(
                     
