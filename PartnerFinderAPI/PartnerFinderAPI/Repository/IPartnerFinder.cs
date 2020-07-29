@@ -1,5 +1,6 @@
 ﻿using PartnerFinderAPI.DTO;
 using PartnerFinderAPI.Model;
+using PartnerFinderAPI.Pagging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace PartnerFinderAPI.Repository
 {
     public interface IPartnerFinder: IRepository<AppUser>
     {
-        Task<IEnumerable<AppUser>> GetUsers();
+        Task<PagedList<AppUser>> GetUsers(PaggingParms paggingParms);
         Task<AppUser> GetUser(string id);
     }
 }

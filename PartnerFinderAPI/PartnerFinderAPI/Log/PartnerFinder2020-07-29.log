@@ -63,3 +63,9 @@ System.Threading.Tasks.TaskCanceledException: A task was canceled.
 2020-07-29 18:36:31.1507|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-07-29 18:36:31.2036|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2020-07-29 18:36:31.2036|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-29 19:24:49.1183|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-29 19:24:49.1699|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-29 19:24:49.1776|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-29 19:32:21.9505|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-29 19:32:22.0305|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-29 19:32:22.0392|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI

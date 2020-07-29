@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PartnerFinderAPI.DTO;
 using PartnerFinderAPI.Model;
+using PartnerFinderAPI.Pagging;
 using PartnerFinderAPI.Repository;
 using System;
 using System.Collections.Generic;
@@ -25,11 +26,11 @@ namespace PartnerFinderAPI.Controller
         }
 
         [HttpGet("all")]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery]PaggingParms paggingParms)
         {
             try
             {
-                var users = await _unitofWork.PartnerFinder.GetUsers();
+                var users = await _unitofWork.PartnerFinder.GetUsers(paggingParms);
                 var userToReturn = _mapper.Map<IEnumerable<UserForListDto>>(users);
                 return Ok(userToReturn);
             }

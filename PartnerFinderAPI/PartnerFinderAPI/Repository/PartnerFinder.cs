@@ -2,6 +2,7 @@
 using PartnerFinderAPI.DB;
 using PartnerFinderAPI.DTO;
 using PartnerFinderAPI.Model;
+using PartnerFinderAPI.Pagging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,10 +32,11 @@ namespace PartnerFinderAPI.Repository
             }
         }
 
-        public async Task<IEnumerable<AppUser>> GetUsers()
+        public async Task<PagedList<AppUser>> GetUsers(PaggingParms paggingParms)
         {
-            var result = await _db.AppUsers.Include(x => x.Photos).ToListAsync();
-            return result;
+            var result =  _db.AppUsers.Include(x => x.Photos).AsQueryable();
+
+            return await PagedList<AppUser>.CreteAsync(result, paggingParms.PageNumber, paggingParms.PageSize);
         }
 
     }
