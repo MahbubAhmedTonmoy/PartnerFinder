@@ -6,4 +6,6 @@ export interface UserForRegistration {
     password: string;
     confirmPassword: string;
     role: string;
+    gender: string;
+    deathOfBirth: Date;
 }

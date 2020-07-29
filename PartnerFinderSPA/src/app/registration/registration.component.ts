@@ -24,7 +24,9 @@ export class RegistrationComponent implements OnInit {
       email: new FormControl('', Validators.required), 
       username: new FormControl('', Validators.required),      //['', Validators.required]
       password: new FormControl('', Validators.required),
-      confirmPassword: new FormControl('', Validators.required)
+      confirmPassword: new FormControl('', Validators.required),
+      gender: new FormControl('', Validators.required),
+      dateOfBirth: new FormControl('')
     })
   }
   register(){

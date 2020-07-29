@@ -69,7 +69,9 @@ namespace PartnerFinderAPI.Controller
                 Name = userRegistrationDto.UserName,
                 Email = userRegistrationDto.Email,
                 Created = DateTime.Now,
-                LastActive = DateTime.Now
+                LastActive = DateTime.Now,
+                Gender = userRegistrationDto.Gender,
+                DateOfBirth = userRegistrationDto.DateOfBirth
             };
             if (await _userManager.FindByEmailAsync(userRegistrationDto.Email) != null)
             {
