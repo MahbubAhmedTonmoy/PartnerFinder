@@ -22,6 +22,7 @@ import { from } from 'rxjs';
 import { MembersComponent } from './memberslist/members/members.component';
 import { MemberCardComponent } from './memberslist/member-card/member-card.component';
 import { MemberDetailsComponent } from './memberslist/member-details/member-details.component';
+import { MemberEditComponent } from './memberslist/member-edit/member-edit.component';
 import { LikesuserComponent } from './likesuser/likesuser.component';
 import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from './routes';
@@ -41,7 +42,8 @@ export function tokenGetter() {
       LikesuserComponent,
       MessagesComponent,
       MemberCardComponent,
-      MemberDetailsComponent
+      MemberDetailsComponent,
+      MemberEditComponent
    ],
    imports: [
       BrowserModule,

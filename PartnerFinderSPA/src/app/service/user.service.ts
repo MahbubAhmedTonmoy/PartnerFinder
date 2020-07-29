@@ -29,4 +29,7 @@ constructor(private Http: HttpClient) { }
   {
     return this.Http.get<User>( this.baseUrl + id);
   }
+  updateUser(id: string, user: User){
+    return this.Http.put(this.baseUrl + 'edit/'+ id, user);
+  }
 }

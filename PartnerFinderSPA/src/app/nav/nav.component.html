@@ -18,12 +18,8 @@
       <a class="text-light mr-2">
         Welcome {{authservice.decodedToken?.unique_name | titlecase}}
       </a>
-      <button type="button" class="btn btn-danger" (click)="Logout()"><i class="fa fa-sign-out"></i></button>
-      <!--<div class="dropdown-menu mt-3" *dropdownMenu>
-        <a class="dropdown-item" [routerLink]="['/member/edit']">
-          <i class="fa fa-user"></i> Edit Profile</a>
-        <div class="dropdown-divider"></div> -->
-        
+      <button type="button" class="btn btn-danger mr-2" (click)="Logout()"><i class="fa fa-sign-out"></i></button>      
+      <button type="button"  class="btn btn-info"[routerLink]="['/members/edit/', authservice.decodedToken?.nameid]"><i class="fa fa-pencil-square-o"></i></button>
     </div>
 
 <!--login form-->

@@ -59,7 +59,7 @@ namespace PartnerFinderAPI.Controller
             }
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("edit/{id}")]
         public async Task<IActionResult> Update(string id, UserForUpdateDto userForUpdate)
         {
             try
