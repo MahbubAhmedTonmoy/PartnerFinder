@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PartnerFinderAPI.DB;
+using PartnerFinderAPI.DTO;
 using PartnerFinderAPI.Model;
 using System;
 using System.Collections.Generic;
@@ -18,8 +19,16 @@ namespace PartnerFinderAPI.Repository
 
         public async Task<AppUser> GetUser(string id)
         {
-            var ans =await _db.AppUsers.Include(x => x.Photos).FirstOrDefaultAsync(x=> x.Id == id);
-            return ans;
+            try
+            {
+                var ans = await _db.AppUsers.Include(x => x.Photos).FirstOrDefaultAsync(x => x.Id == id);
+                return ans;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
         }
 
         public async Task<IEnumerable<AppUser>> GetUsers()
@@ -27,5 +36,6 @@ namespace PartnerFinderAPI.Repository
             var result = await _db.AppUsers.Include(x => x.Photos).ToListAsync();
             return result;
         }
+
     }
 }

@@ -24,6 +24,8 @@ namespace PartnerFinderAPI.Helpers
                     opt.MapFrom(src => src.Photos.FirstOrDefault(x => x.IsMain == true).Url);
                 });
             CreateMap<Photo, PhotosForDetailedDto>();
+
+            CreateMap<UserForUpdateDto, AppUser>();
         }
     }
 }

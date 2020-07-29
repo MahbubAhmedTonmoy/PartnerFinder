@@ -36,6 +36,19 @@ namespace PartnerFinderAPI.DTO
         public string PhotoUrl { get; set; }
         public ICollection<PhotosForDetailedDto> Photos { get; set; }
     }
+    public class UserForUpdateDto
+    {
+        public string Username { get; set; }
+        public string Gender { get; set; }
+        public int Age { get; set; }
+        public string KnownAs { get; set; }
+        public DateTime LastActive { get; set; } = DateTime.Now;
+        public string Introduction { get; set; }
+        public string LookingFor { get; set; }
+        public string Interests { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
+    }
     public class PhotosForDetailedDto
     {
         public int Id { get; set; }

@@ -58,5 +58,27 @@ namespace PartnerFinderAPI.Controller
                 throw;
             }
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(string id, UserForUpdateDto userForUpdate)
+        {
+            try
+            {
+                var findUser = _unitofWork.PartnerFinder.GetUser(id);
+                var user = findUser.Result;
+                if(findUser.Result != null)
+                {
+                    _mapper.Map(userForUpdate, user);
+                    var result =await _unitofWork.Save();
+                    if (result == 0) return StatusCode(500, "not saved");
+                    return Ok();
+                }
+                return StatusCode(400, "not found");
+            }
+            catch(Exception ex)
+            {
+                throw;
+            }
+        }
     }
 }
