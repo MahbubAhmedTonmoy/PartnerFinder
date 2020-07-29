@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { JwtModule } from "@auth0/angular-jwt";
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { NgxGalleryModule } from 'ngx-gallery-9';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 
 import { AuthService } from './service/auth.service'
 import { HomeComponent } from './home/home.component';
@@ -54,6 +55,7 @@ export function tokenGetter() {
       ReactiveFormsModule,
       RouterModule.forRoot(appRoutes),
       BsDropdownModule.forRoot(),
+      PaginationModule.forRoot(),
       TabsModule.forRoot(),
       NgxGalleryModule,
 		JwtModule.forRoot({

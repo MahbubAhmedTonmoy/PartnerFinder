@@ -11,7 +11,7 @@ import { AlertifyService } from '../../service/alertify.service';
 export class MembersComponent implements OnInit {
  users: User[];
  pageNumber = 1;
- pageSize = 2;
+ pageSize = 3;
   constructor(private userService: UserService, private alert: AlertifyService) { }
 
   ngOnInit() {

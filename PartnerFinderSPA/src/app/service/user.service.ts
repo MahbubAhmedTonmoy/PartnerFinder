@@ -30,7 +30,7 @@ constructor(private Http: HttpClient) { }
       params = params.append('pageNumber', page);
       params = params.append('pageSize', itemPerPage);
     }
-    return this.Http.get<User[]>( this.baseUrl + 'all', {params: params})
+    return this.Http.get<User[]>( this.baseUrl + 'all', {params: params});
     
 }
 
