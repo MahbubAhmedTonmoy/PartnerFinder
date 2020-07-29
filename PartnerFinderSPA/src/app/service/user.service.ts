@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { Observable, from } from 'rxjs';
 import { User } from '../models/user';
+import {PaginatedResult } from '../models/paggination';
+import { map } from 'rxjs/operators';
 
 /*
 const httpOptions = {   // token pass in header
@@ -19,11 +21,18 @@ export class UserService {
   baseUrl = environment.apiUrl +'user/';
 
 constructor(private Http: HttpClient) { }
-  getUsers(): Observable<User[]> // return observable type user
+  getUsers(page?, itemPerPage?): Observable<User[]> // return observable type user
   {
     //return this.Http.get<User[]>( this.baseUrl + 'all', httpOptions);
-    return this.Http.get<User[]>( this.baseUrl + 'all');
-  }
+    const paginatedResult: PaginatedResult<User[]> = new PaginatedResult<User[]>();
+    let params = new HttpParams();
+    if(page != null && itemPerPage != null){
+      params = params.append('pageNumber', page);
+      params = params.append('pageSize', itemPerPage);
+    }
+    return this.Http.get<User[]>( this.baseUrl + 'all', {params: params})
+    
+}
 
   getUser(id): Observable<User> // return observable type user
   {

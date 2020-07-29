@@ -10,7 +10,8 @@ import { AlertifyService } from '../../service/alertify.service';
 })
 export class MembersComponent implements OnInit {
  users: User[];
- 
+ pageNumber = 1;
+ pageSize = 2;
   constructor(private userService: UserService, private alert: AlertifyService) { }
 
   ngOnInit() {
@@ -19,7 +20,7 @@ export class MembersComponent implements OnInit {
 
 
   loadUsers(){
-    this.userService.getUsers().subscribe((users: User[]) =>{
+    this.userService.getUsers(this.pageNumber, this.pageSize).subscribe((users: User[]) =>{
       this.users = users;
       console.log(this.users);
     }, error => {
