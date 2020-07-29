@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { JwtModule } from "@auth0/angular-jwt";
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { NgxGalleryModule } from 'ngx-gallery-9';
 
 import { AuthService } from './service/auth.service'
 import { HomeComponent } from './home/home.component';
@@ -52,6 +53,7 @@ export function tokenGetter() {
       RouterModule.forRoot(appRoutes),
       BsDropdownModule.forRoot(),
       TabsModule.forRoot(),
+      NgxGalleryModule,
 		JwtModule.forRoot({
          config: {
            tokenGetter: tokenGetter,
