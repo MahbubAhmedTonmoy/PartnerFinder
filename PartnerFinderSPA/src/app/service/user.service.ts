@@ -41,4 +41,8 @@ constructor(private Http: HttpClient) { }
   updateUser(id: string, user: User){
     return this.Http.put(this.baseUrl + 'edit/'+ id, user);
   }
+
+  sendLike(sender: string, receiver: string){
+    return this.Http.post(this.baseUrl + sender + '/like/' + receiver, {});
+  }
 }
