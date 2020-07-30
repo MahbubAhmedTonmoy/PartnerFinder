@@ -24,5 +24,9 @@ namespace PartnerFinderAPI.Pagging
 
         //sorting
         public string OrderBy { get; set; }
+
+        public string UserId { get; set; }
+        public bool Likees { get; set; }
+        public bool Likers { get; set; }
     }
 }

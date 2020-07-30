@@ -45,8 +45,17 @@ namespace PartnerFinderAPI.Repository
             //filter
             if (!string.IsNullOrEmpty(paggingParms.Gender))
                 result = result.Where(x => x.Gender == paggingParms.Gender);
-
-           // sort
+            if (paggingParms.Likers)
+            {
+                var userLikers = await GetUserLikes(paggingParms.UserId, paggingParms.Likers);
+                result = result.Where(u => userLikers.Contains(u.Id));
+            }
+            if (paggingParms.Likees)
+            {
+                var userLikees = await GetUserLikes(paggingParms.UserId, paggingParms.Likers);
+                result = result.Where(u => userLikees.Contains(u.Id));
+            }
+            // sort
             if (!string.IsNullOrEmpty(paggingParms.OrderBy))
             {
                 switch (paggingParms.OrderBy)
@@ -88,9 +97,19 @@ namespace PartnerFinderAPI.Repository
             }
         }
 
-        //private async Task<IEnumerable<string>> GetUserLikes()
-        //{
-
-        //}
+        private async Task<IEnumerable<string>> GetUserLikes(string id, bool likers)
+        {
+            var user = await _db.AppUsers
+                .Include(x => x.Likers).Include(y => y.Likees)
+                .FirstOrDefaultAsync(u => u.Id == id);
+            if (likers)
+            {
+                return user.Likers.Where(u => u.LikeeID == id).Select(i => i.LikerID);
+            }
+            else
+            {
+                return user.Likers.Where(u => u.LikerID == id).Select(i => i.LikeeID);
+            }
+        }
     }
 }
