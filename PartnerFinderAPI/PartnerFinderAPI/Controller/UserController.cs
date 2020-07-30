@@ -8,6 +8,7 @@ using PartnerFinderAPI.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Threading.Tasks;
 
 namespace PartnerFinderAPI.Controller
@@ -77,6 +78,30 @@ namespace PartnerFinderAPI.Controller
                 return StatusCode(400, "not found");
             }
             catch(Exception ex)
+            {
+                throw;
+            }
+        }
+
+        [HttpPost("{sender}/like/{receiver}")]
+        public async Task<IActionResult> Like(string sender, string receiver)
+        {
+            try
+            {
+                var likeExist = _unitofWork.PartnerFinder.GetLike(sender, receiver);
+                if (likeExist != null)
+                {
+                    return BadRequest("already likes this");
+                }
+                else
+                {
+                    _unitofWork.PartnerFinder.SendLike(sender, receiver);
+                    var result = await _unitofWork.Save();
+                    if (result == 0) return StatusCode(500, "not saved");
+                    return Ok();
+                }
+            }
+            catch (Exception ex)
             {
                 throw;
             }

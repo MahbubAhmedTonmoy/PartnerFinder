@@ -18,7 +18,7 @@ namespace PartnerFinderAPI.Pagging
         }
 
         //filter
-        public string Gender { get; set; }
+        public string? Gender { get; set; }
         public int MinAge { get; set; } = 70;
         public int MaxAge { get; set; } = 200;
 

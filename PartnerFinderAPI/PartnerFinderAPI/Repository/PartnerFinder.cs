@@ -6,6 +6,7 @@ using PartnerFinderAPI.Pagging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace PartnerFinderAPI.Repository
@@ -16,6 +17,12 @@ namespace PartnerFinderAPI.Repository
         public PartnerFinder(AppDbContext db) : base(db)
         {
             _db = db;
+        }
+
+        public Like GetLike(string senderId, string receiverid)
+        {
+            var likeExist =  _db.Likes.Where(x => x.LikerID == senderId && x.LikeeID == receiverid).FirstOrDefault();
+            return likeExist;
         }
 
         public async Task<AppUser> GetUser(string id)
@@ -36,9 +43,10 @@ namespace PartnerFinderAPI.Repository
         {
             var result =  _db.AppUsers.Include(x => x.Photos).OrderBy(x=> x.LastActive).AsQueryable();
             //filter
-            result = result.Where(x => x.Gender == paggingParms.Gender);
+            if (!string.IsNullOrEmpty(paggingParms.Gender))
+                result = result.Where(x => x.Gender == paggingParms.Gender);
 
-            //sort
+           // sort
             if (!string.IsNullOrEmpty(paggingParms.OrderBy))
             {
                 switch (paggingParms.OrderBy)
@@ -55,5 +63,34 @@ namespace PartnerFinderAPI.Repository
             return await PagedList<AppUser>.CreteAsync(result, paggingParms.PageNumber, paggingParms.PageSize);
         }
 
+        public void SendLike(string senderId, string receiverID)
+        {
+            try
+            {
+                var senderExist = _db.AppUsers.FirstOrDefault(x => x.Id == senderId);
+                var receiverExist = _db.AppUsers.FirstOrDefault(x => x.Id == receiverID);
+
+                if (senderId != null || receiverID != null)
+                {
+                    var like = new Like
+                    {
+                        LikerID = senderId,
+                        LikeeID = receiverID
+                    };
+                    _db.Likes.Add(like);
+                }
+               
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
+        //private async Task<IEnumerable<string>> GetUserLikes()
+        //{
+
+        //}
     }
 }

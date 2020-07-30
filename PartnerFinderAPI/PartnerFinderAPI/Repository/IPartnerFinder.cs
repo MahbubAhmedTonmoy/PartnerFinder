@@ -12,5 +12,7 @@ namespace PartnerFinderAPI.Repository
     {
         Task<PagedList<AppUser>> GetUsers(PaggingParms paggingParms);
         Task<AppUser> GetUser(string id);
+        Like GetLike(string senderId, string receiverid);
+        void SendLike(string senderId, string receiverID);
     }
 }
