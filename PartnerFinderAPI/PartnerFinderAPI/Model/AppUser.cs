@@ -23,5 +23,7 @@ namespace PartnerFinderAPI.Model
         public ICollection<Photo> Photos { get; set; }
         public ICollection<Like> Likers { get; set; }
         public ICollection<Like> Likees { get; set; }
+        public ICollection<Message> SendMessage { get; set; }
+        public ICollection<Message> ReceiveMessage { get; set; }
     }
 }

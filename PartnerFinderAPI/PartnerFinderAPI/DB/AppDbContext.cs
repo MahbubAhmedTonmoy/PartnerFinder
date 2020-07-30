@@ -37,6 +37,15 @@ namespace PartnerFinderAPI.DB
                 .WithMany(r => r.Likers)
                 .HasForeignKey(g => g.LikeeID)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            builder.Entity<Message>()
+                .HasOne(u => u.Sender)
+                .WithMany(m => m.SendMessage)
+                .OnDelete(DeleteBehavior.Restrict);
+            builder.Entity<Message>()
+                .HasOne(u => u.Receiver)
+                .WithMany(u => u.ReceiveMessage)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
