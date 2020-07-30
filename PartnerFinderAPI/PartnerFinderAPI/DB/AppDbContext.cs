@@ -18,6 +18,7 @@ namespace PartnerFinderAPI.DB
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<Photo> Photos { get; set; }
         public DbSet<Like> Likes { get; set; }
+        public DbSet<Message> Messages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
