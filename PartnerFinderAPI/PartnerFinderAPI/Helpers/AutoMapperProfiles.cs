@@ -26,7 +26,16 @@ namespace PartnerFinderAPI.Helpers
             CreateMap<Photo, PhotosForDetailedDto>();
 
             CreateMap<UserForUpdateDto, AppUser>();
-            CreateMap<MessageCreateDTO, Message>();
+            CreateMap<MessageCreateDTO, Message>().ReverseMap();
+            CreateMap<Message, MessageToReturnDTO>()
+                .ForMember(destination => destination.SenderPhotoUrl, opt =>
+                {
+                    opt.MapFrom(u => u.Sender.Photos.FirstOrDefault(x => x.IsMain == true).Url);
+                })
+                .ForMember(destination => destination.ReceiverPhotoUrl, opt =>
+                 {
+                     opt.MapFrom(u => u.Receiver.Photos.FirstOrDefault(x => x.IsMain == true).Url);
+                 });
         }
     }
 }

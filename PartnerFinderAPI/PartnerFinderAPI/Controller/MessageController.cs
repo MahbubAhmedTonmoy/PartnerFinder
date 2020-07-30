@@ -51,5 +51,19 @@ namespace PartnerFinderAPI.Controller
             if (result == 0) return StatusCode(500, "saving probem");
             return Ok();
         }
+
+        [HttpGet("{userId}/m")]
+        public async Task<IActionResult>GetMessagesForUser(string userId,[FromQuery] MessageParms messageParms)
+        {
+            var a = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            if (userId != User.FindFirst(ClaimTypes.NameIdentifier).Value)
+                return Unauthorized();
+
+            messageParms.UserId = userId;
+            var messageFromRepo = await _unitofWork.MessageRepository.GetMessagesForUser(messageParms);
+            var message = _mapper.Map<IEnumerable<MessageToReturnDTO>>(messageFromRepo);
+            return Ok(message);
+
+        }
     }
 }

@@ -98,3 +98,24 @@ System.Threading.Tasks.TaskCanceledException: A task was canceled.
 2020-07-30 14:01:06.9460|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2020-07-30 14:01:07.0152|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2020-07-30 14:01:07.0152|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-30 23:36:15.0870|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-30 23:36:15.1479|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-30 23:36:15.1563|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-30 23:36:48.3087|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-30 23:36:48.3759|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-30 23:36:48.3759|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-30 23:37:36.6352|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-30 23:39:04.5500|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-30 23:39:04.5964|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-30 23:39:04.6135|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-30 23:40:49.5145|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-30 23:41:30.2898|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-30 23:42:09.6681|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-30 23:42:24.4953|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-30 23:46:10.9718|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-30 23:46:11.0299|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-30 23:46:11.0365|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
+2020-07-30 23:47:14.0317|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2020-07-30 23:48:52.8752|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2020-07-30 23:48:52.9243|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2020-07-30 23:48:52.9243|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI
