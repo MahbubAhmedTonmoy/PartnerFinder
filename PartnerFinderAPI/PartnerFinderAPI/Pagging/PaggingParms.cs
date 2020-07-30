@@ -23,6 +23,6 @@ namespace PartnerFinderAPI.Pagging
         public int MaxAge { get; set; } = 200;
 
         //sorting
-        public int OrderBy { get; set; } = 1;
+        public string OrderBy { get; set; }
     }
 }

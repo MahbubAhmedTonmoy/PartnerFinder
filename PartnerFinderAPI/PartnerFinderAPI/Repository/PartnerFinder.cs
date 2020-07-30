@@ -34,7 +34,23 @@ namespace PartnerFinderAPI.Repository
 
         public async Task<PagedList<AppUser>> GetUsers(PaggingParms paggingParms)
         {
-            var result =  _db.AppUsers.Include(x => x.Photos).AsQueryable();
+            var result =  _db.AppUsers.Include(x => x.Photos).OrderBy(x=> x.LastActive).AsQueryable();
+            //filter
+            result = result.Where(x => x.Gender == paggingParms.Gender);
+
+            //sort
+            if (!string.IsNullOrEmpty(paggingParms.OrderBy))
+            {
+                switch (paggingParms.OrderBy)
+                {
+                    case "created":
+                        result = result.OrderByDescending(x => x.Created);
+                        break;
+                    default:
+                        result = result.OrderByDescending(x => x.LastActive);
+                        break;
+                }
+            }
 
             return await PagedList<AppUser>.CreteAsync(result, paggingParms.PageNumber, paggingParms.PageSize);
         }
