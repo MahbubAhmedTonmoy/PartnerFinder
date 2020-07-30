@@ -26,6 +26,7 @@ namespace PartnerFinderAPI.Helpers
             CreateMap<Photo, PhotosForDetailedDto>();
 
             CreateMap<UserForUpdateDto, AppUser>();
+            CreateMap<MessageCreateDTO, Message>();
         }
     }
 }

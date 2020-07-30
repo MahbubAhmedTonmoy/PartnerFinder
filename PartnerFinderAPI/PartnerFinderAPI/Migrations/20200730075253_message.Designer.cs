@@ -10,8 +10,8 @@ using PartnerFinderAPI.DB;
 namespace PartnerFinderAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200730062222_messsage2")]
-    partial class messsage2
+    [Migration("20200730075253_message")]
+    partial class message
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

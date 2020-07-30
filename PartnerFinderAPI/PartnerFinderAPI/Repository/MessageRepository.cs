@@ -30,5 +30,10 @@ namespace PartnerFinderAPI.Repository
         {
             throw new NotImplementedException();
         }
+        public void Add(Message entity)
+        {
+            _db.Messages.Add(entity);
+        }
+
     }
 }

@@ -15,6 +15,7 @@ namespace PartnerFinderAPI.Repository
         {
             _db = db;
             PartnerFinder = new PartnerFinder(_db);
+            MessageRepository = new MessageRepository(_db);
         }
 
         public async Task<int> Save()

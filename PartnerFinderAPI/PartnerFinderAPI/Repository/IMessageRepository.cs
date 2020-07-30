@@ -12,5 +12,7 @@ namespace PartnerFinderAPI.Repository
         Task<Message> GetMessage(int id);
         Task<PagedList<Message>> GetMessagesForUser();
         Task<IEnumerable<Message>> GetMessagesThread(string senderId, string receiverId);
+
+        void Add(Message entity);
     }
 }
