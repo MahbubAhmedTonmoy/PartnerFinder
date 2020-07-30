@@ -8,7 +8,7 @@ namespace PartnerFinderAPI.Repository
     public interface IUnitofWork
     {
         IPartnerFinder PartnerFinder { get; }
-
+        IMessageRepository MessageRepository { get; }
         Task<int> Save();
     }
 }

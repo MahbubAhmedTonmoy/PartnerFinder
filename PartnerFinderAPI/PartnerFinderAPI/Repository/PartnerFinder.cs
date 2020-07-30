@@ -25,20 +25,6 @@ namespace PartnerFinderAPI.Repository
             return likeExist;
         }
 
-        public async Task<Message> GetMessage(int id)
-        {
-            return await _db.Messages.FirstOrDefaultAsync(x => x.Id == id);
-        }
-
-        public Task<PagedList<Message>> GetMessagesForUser()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IEnumerable<Message>> GetMessagesThread(string senderId, string receiverId)
-        {
-            throw new NotImplementedException();
-        }
 
         public async Task<AppUser> GetUser(string id)
         {

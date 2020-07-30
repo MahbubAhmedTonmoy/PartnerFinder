@@ -9,6 +9,7 @@ namespace PartnerFinderAPI.Repository
     public class UnitofWork : IUnitofWork
     {
         public IPartnerFinder PartnerFinder { get; private set; }
+        public IMessageRepository MessageRepository { get; private set; }
         private readonly AppDbContext _db;
         public UnitofWork(AppDbContext db)
         {
