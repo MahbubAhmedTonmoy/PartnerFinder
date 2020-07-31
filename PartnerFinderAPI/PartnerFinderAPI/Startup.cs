@@ -17,6 +17,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using PartnerFinderAPI.DB;
+using PartnerFinderAPI.Helpers;
 using PartnerFinderAPI.Helpers.GlobalErrorHandel;
 using PartnerFinderAPI.JWTToken;
 using PartnerFinderAPI.Model;
@@ -39,7 +40,7 @@ namespace PartnerFinderAPI
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("PartnerFinder")));
 
             _ = services.AddIdentity<AppUser, IdentityRole>(o => { }).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
-
+            services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
             services.AddCors();
             services.AddAutoMapper(typeof(Startup));
             services.AddScoped<IJwtGenerator, JwtGenerator>();

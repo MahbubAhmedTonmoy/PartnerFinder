@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "EhV/yoAjNwm1D8V+KOnBTSCHXeHRL+RCVkTifzOzh/u9SqhzmuCzgv3VICGqixDyAjqJlNtP1PTZG0MNYy74kw==",
+  "dgSpecHash": "OkwAiNaToZsEKp1bRC/xWLzQv9/Bs85dmSccEMMFXxehxbwhwjCsXRxubn6azHi0MWfn+9e4KkClXbR7YxkX6A==",
   "success": true,
   "projectFilePath": "C:\\Users\\ahmed.mahbub\\Desktop\\PartnerFinder\\PartnerFinderAPI\\PartnerFinderAPI\\PartnerFinderAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\cloudinarydotnet\\1.11.0\\cloudinarydotnet.1.11.0.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.5\\microsoft.aspnetcore.authentication.jwtbearer.3.1.5.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.5\\microsoft.aspnetcore.cryptography.internal.3.1.5.nupkg.sha512",
     "C:\\Users\\ahmed.mahbub\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.5\\microsoft.aspnetcore.cryptography.keyderivation.3.1.5.nupkg.sha512",

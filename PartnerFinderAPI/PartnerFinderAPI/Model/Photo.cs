@@ -12,5 +12,6 @@ namespace PartnerFinderAPI.Model
         //casecade delete 
         public AppUser User { get; set; }
         public string UserId { get; set; }
+        public string PublicId { get; set; }
     }
 }

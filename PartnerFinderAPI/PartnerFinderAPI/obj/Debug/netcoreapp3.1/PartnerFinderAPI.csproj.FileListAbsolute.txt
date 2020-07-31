@@ -1,6 +1,4 @@
 C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\obj\Debug\netcoreapp3.1\PartnerFinderAPI.csprojAssemblyReference.cache
-C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\obj\Debug\netcoreapp3.1\PartnerFinderAPI.csproj.CoreCompileInputs.cache
-C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\obj\Debug\netcoreapp3.1\PartnerFinderAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\obj\Debug\netcoreapp3.1\PartnerFinderAPI.AssemblyInfoInputs.cache
 C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\obj\Debug\netcoreapp3.1\PartnerFinderAPI.AssemblyInfo.cs
 C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -74,3 +72,6 @@ C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\ob
 C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\bin\Debug\netcoreapp3.1\NLog.config
 C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
+C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\obj\Debug\netcoreapp3.1\PartnerFinderAPI.csproj.CoreCompileInputs.cache
+C:\Users\ahmed.mahbub\Desktop\PartnerFinder\PartnerFinderAPI\PartnerFinderAPI\obj\Debug\netcoreapp3.1\PartnerFinderAPI.MvcApplicationPartsAssemblyInfo.cache
