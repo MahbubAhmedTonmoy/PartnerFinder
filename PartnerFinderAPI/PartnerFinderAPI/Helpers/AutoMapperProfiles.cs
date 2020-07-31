@@ -23,8 +23,9 @@ namespace PartnerFinderAPI.Helpers
                 {
                     opt.MapFrom(src => src.Photos.FirstOrDefault(x => x.IsMain == true).Url);
                 });
-            CreateMap<Photo, PhotosForDetailedDto>();
-
+            CreateMap<Photo, PhotosDetailedDto>();
+            CreateMap<PhotoUploadDTO, Photo>();
+            CreateMap<Photo, PhotoReturnDto>();
             CreateMap<UserForUpdateDto, AppUser>();
             CreateMap<MessageCreateDTO, Message>().ReverseMap();
             CreateMap<Message, MessageToReturnDTO>()
@@ -36,6 +37,8 @@ namespace PartnerFinderAPI.Helpers
                  {
                      opt.MapFrom(u => u.Receiver.Photos.FirstOrDefault(x => x.IsMain == true).Url);
                  });
+           
+
         }
     }
 }

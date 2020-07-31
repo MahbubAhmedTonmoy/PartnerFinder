@@ -9,6 +9,7 @@ namespace PartnerFinderAPI.Repository
     {
         IPartnerFinder PartnerFinder { get; }
         IMessageRepository MessageRepository { get; }
+        IPhotoRepo PhotoRepo { get; }
         Task<int> Save();
     }
 }
