@@ -60,7 +60,7 @@ namespace PartnerFinderAPI.Controller
 
             if (photoFile.Length > 0)
             {
-                using(var stream = photoFile.OpenReadStream())
+                using (var stream = photoFile.OpenReadStream())
                 {
                     var uploadParams = new ImageUploadParams()
                     {
@@ -68,14 +68,14 @@ namespace PartnerFinderAPI.Controller
                         Transformation = new Transformation()
                             .Width(500).Height(500).Crop("fill").Gravity("face")
                     };
-                    uploadResult =  _cloudinary.Upload(uploadParams);
+                    uploadResult = _cloudinary.Upload(uploadParams);
                 }
             }
             photoUploadDTO.Url = uploadResult.Uri.ToString();
             photoUploadDTO.PublicId = uploadResult.PublicId;
             var photo = _mapper.Map<Photo>(photoUploadDTO);
 
-            if(!userexist.Photos.Any(x => x.IsMain))
+            if (!userexist.Photos.Any(x => x.IsMain))
             {
                 photo.IsMain = true;
             }
@@ -86,8 +86,66 @@ namespace PartnerFinderAPI.Controller
             var phototoReturn = _mapper.Map<PhotoReturnDto>(photo);
             return Ok(phototoReturn);
         }
-      
 
-       
+
+        [HttpPost("{id}/setMain")]
+        public async Task<IActionResult> SetMainPhoto(string userId, int id)
+        {
+            if (userId != User.FindFirst(ClaimTypes.NameIdentifier).Value)
+                return Unauthorized();
+
+            var user = await _unitofWork.PartnerFinder.GetUser(userId);
+
+            if (!user.Photos.Any(p => p.Id == id))
+                return BadRequest("this photo is not present in this user profile");
+
+            var photoFromRepo = await _unitofWork.PhotoRepo.GetPhoto(id);
+
+            if (photoFromRepo.IsMain)
+                return BadRequest("This is already the main photo");
+
+            var currentMainPhoto = await _unitofWork.PhotoRepo.GetMainPhotoForUser(userId);
+            currentMainPhoto.IsMain = false;
+
+            photoFromRepo.IsMain = true;
+
+            var result = await _unitofWork.Save();
+            if (result == 0) return StatusCode(500, "saving probem");
+
+            return Ok("set photo to main");
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletePhoto(string userId, int photoId)
+        {
+            if (userId != User.FindFirst(ClaimTypes.NameIdentifier).Value)
+                return Unauthorized();
+
+            var user = await _unitofWork.PartnerFinder.GetUser(userId);
+
+            if (!user.Photos.Any(p => p.Id == id))
+                return BadRequest("this photo is not present in this user profile");
+
+            var photoFromRepo = await _unitofWork.PhotoRepo.GetPhoto(photoId);
+
+            if (photoFromRepo.IsMain) return BadRequest("not able to delete main photo");
+            if(photoFromRepo.PublicId != null)
+            {
+                var deleteParams = new DeletionParams(photoFromRepo.PublicId);
+                var deleteresult = _cloudinary.Destroy(deleteParams);
+                if(deleteresult.Result == "ok")
+                {
+                    _unitofWork.PhotoRepo.Delete(photoFromRepo);
+                }
+            }
+            if(photoFromRepo.PublicId == null)
+            {
+                _unitofWork.PhotoRepo.Delete(photoFromRepo);
+            }
+            var result = await _unitofWork.Save();
+            if (result == 0) return StatusCode(500, "saving probem");
+            return Ok("delete photo");
+        }
+
     }
 }
